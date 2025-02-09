@@ -99,15 +99,11 @@ https://github.com/user-attachments/assets/115e0cd5-a618-415b-b4a4-70fd9697af1e
 
 
 ## Insights
-
-
-
-
-
-
-
-
-
+- Out of the total merchants, ~ 53% of fraud cases happened with males, and 47% with females.
+- Fraud cases were higher in 2019 compared to the previous year.
+- More frauds happened with audiological scientists compared to other jobs.
+- Credit card transactions were highest among females compared to males.
+- The highest number of fraud cases in North America were found in the state of TX.
 
 
 ## How to Access Insights
