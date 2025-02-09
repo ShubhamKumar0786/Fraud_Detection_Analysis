@@ -35,10 +35,10 @@ To fetch data from MySQL using ODBC:
 4. Load the data and refresh as needed.
 
 ## Loading and Cleaning Excel Data in Jupyter Notebook, then Storing in MySQL
-To process an Excel file and store it in MySQL:
+process 
 1. Install required libraries:
    ```python
-   !pip install pandas sqlalchemy pymysql openpyxl
+   !pip install pandas , numpy
    ```
 2. Load the Excel file in Jupyter Notebook:
    ```python
@@ -47,25 +47,28 @@ To process an Excel file and store it in MySQL:
    ```
 3. Perform data cleaning:
    ```python
+   df.isnull().sum()        # Checking missing values
    df.dropna(inplace=True)  # Remove missing values
    df = df.drop_duplicates()  # Remove duplicate rows
    ```
-4. Connect to MySQL database:
+
+4. Convert to csv file:
    ```python
-   from sqlalchemy import create_engine
-   engine = create_engine('mysql+pymysql://user:password@host/database')
-   ```
-5. Store the cleaned data into MySQL:
-   ```python
-   df.to_sql('table_name', con=engine, if_exists='replace', index=False)
-   ```
+   df.to_csv("Data.csv")
+5. Connect to MySQL database:
+  - Store data(csv file) on MySQL
+
+6. Fetch data from MySQL:
+   - In Power BI, go to **Get Data** > **ODBC** and select your configured data source.
+
 
 ## Usage
 - Open `fraud detection.pbix` in Power BI Desktop.
 - Navigate through the interactive reports to explore fraud patterns.
 - Customize filters to analyze specific segments of data.
 
-## Screenshots
+## Key Insights
+## 📸 Preview  
 
 
 
@@ -100,8 +103,24 @@ https://github.com/user-attachments/assets/115e0cd5-a618-415b-b4a4-70fd9697af1e
 
 
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## Contact
-For questions or support, please open an issue or contact the repository owner.
+
+
+
+
+
+
+## How to Access Insights
+
+1. Download the dataset from the `data/` directory.
+2. Open the Power BI file (`data.pbix`) or refer to visualizations provided in the `/visuals` folder.
+3. Use filters and slicers to explore specific trends.
+
+
+
+## Feedback and Contributions
+
+We welcome contributions! If you have insights, improvements, or suggestions, please open an issue or submit a pull request.
+- 🌐 [GitHub Profile](https://github.com/ShubhamKumar0786https://github.com/ShubhamKumar0786)  
+- 📧 Email:shubhamkashyap9501@gmail.com
+- LinkedIn: [Linkedin_link](https://www.linkedin.com/in/shubham0786/)
