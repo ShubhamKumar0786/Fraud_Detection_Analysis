@@ -1,4 +1,4 @@
-# Fraud Detection
+# Credit Card Fraud Detection
 
 ## Overview
 This project focuses on detecting fraudulent activities using data analysis. The repository includes a Power BI report (`fraud detection.pbix`) that visualizes key insights and trends in fraud detection.
